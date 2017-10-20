@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang='en us'>
+
+<!-- Header Section -->
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Schedule</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-+ENW/yibaokMnme+vBLnHMphUYxHs34h9lpdbSLuAwGkOKFRl4C34WkjazBtb7eT" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <link rel='stylesheet' type='text/css' href='assets/css/style.css'>
+    <script type='text/javascript' src='assets/javascript/app.js'>
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+</head>
+
+<!-- Body Section -->
+<body>
+  <!-- Content Wrapper -->
+    <div id='game'>
+        <!-- Bootstrap Row -->
+        <div class='row'>
+            <h1>Anytime is Train Time</h1>
+            <h4>Choo Choo. Chee Chee.</h4>
+        </div>
+        <!-- Bootstrap Row w/ Panel -->
+        <div class='row'>
+            <div class='panel panel-primary'>
+                <div class='panel-heading'>
+                    <h2>Current Train Schedule</h2>
+                </div>
+                <div class='panel-body'>
+                    <table id='train-data'>
+                        <tr>
+                            <th>Train Name</th>
+                            <th>Destination</th>
+                            <th>Frequency (min)</th>
+                            <th>Next Arrival</th>
+                            <th>Minutes Away</th>
+                        </tr>
+                    </table>
+                    <button class='btn btn-primary' id='clear'>
+        Clear
+        </button>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap Row w/ Panel -->
+        <div class='row'>
+            <div class='panel panel-primary'>
+                <div class='panel-heading'>
+                    <h2>Add Train</h2>
+                </div>
+                <div class='panel-body'>
+                    <form>
+                        <label for='train-name'>Train Name</label>
+                        <br>
+                        <input id='name' type='text'>
+                        <br>
+                        <label for='train-destination'>Destination</label>
+                        <br>
+                        <input id='destination' type='text'>
+                        <br>
+                        <label for='first-train-time'>First Train Time (HH:mm - military time)</label>
+                        <br>
+                        <input id='time' type='text'>
+                        <!-- Remember to use four digit year -->
+                        <br>
+                        <label for='frequency'>Frequency (min)</label>
+                        <br>
+                        <input id='frequency' type='text'>
+                        <br>
+                        <button class='btn btn-primary' id='submit'>
+        Submit
+        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>

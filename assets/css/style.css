@@ -1,0 +1,46 @@
+#game {
+  margin: 10px 75px;
+}
+
+#clear {
+  float: right;
+  margin-top: 10px;
+}
+
+h1, h4 {
+  text-align: center;
+}
+
+#train-data {
+  width: 100%;
+}
+
+tr {
+  width: 100%;
+}
+
+th,
+td {
+  width: 20%;
+  padding: 10px;
+}
+
+
+tr {
+    border-bottom: 1px solid black;
+}
+
+
+input {
+  width: 100%;
+}
+
+input,
+label {
+  margin-top: 10px;
+}
+
+#submit {
+  margin-top: 15px;
+}
+
